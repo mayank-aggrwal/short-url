@@ -20,6 +20,7 @@
             <!-- ul.menu>li*6>a -->
 
             <ul class="menu">
+                <li><a href="404.htm">Instructions</a></li>
                 <li><a href="#">Contact Me</a></li>
             </ul>
 
@@ -40,18 +41,18 @@
 
                 <div class="out-box">
                     <div class="in-box">
-                        <input type="text" name="" placeholder="Enter or Paste long URL">
-                        <button>Shorten</button>
+                        <input id="url" type="text" name="" placeholder="Enter or Paste long URL">
+                        <button id="submit" onclick="shortenURL()">Shorten</button>
                     </div>
                 </div>
 
                 <div class="custom">
                     <label>Custom Code</label>
-                    <input type="text" name="" placeholder="Code">
+                    <input id="code" type="text" name="" placeholder="Code">
                 </div>
 
                 <h3>Shortened URL</h3>
-                <p>https://shortt-ly.herokuapp.com/UgetYtTy</p>
+                <p id="result">https://shortt-ly.herokuapp.com/url-short-code</p>
                 <!-- <div class="home-content">
                     <div class="text-1">Hello, my name is</div>
                     <div class="text-2">Mayank Aggarwal</div>

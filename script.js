@@ -29,15 +29,15 @@ async function shortenURL() {
     console.log(`URL: ${urlToShorten}\nCode: ${customCode}`);
     let shortenedURL = ':)'
 
-    // let requestURL = "https://shortt-ly.herokuapp.com/api/custom"
-    let requestURL = "http://localhost:5000/api/custom"
+    let requestURL = "https://shortt-ly.herokuapp.com/api/custom"
+    // let requestURL = "http://localhost:5000/api/custom"
     let requestBody = {
         longUrl: urlToShorten,
         urlCode: customCode
     }
     if(customCode == '') {
-        // requestURL = "https://shortt-ly.herokuapp.com/api/short"
-        requestURL = "http://localhost:5000/api/short"
+        requestURL = "https://shortt-ly.herokuapp.com/api/short"
+        // requestURL = "http://localhost:5000/api/short"
         requestBody = {
             longUrl: urlToShorten
         }
