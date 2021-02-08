@@ -6,7 +6,29 @@
 [![](https://img.shields.io/apm/l/vim-mode.svg)](https://choosealicense.com/licenses/mit/)
 
 A simple yet useful web service to compress long URLs into shorter ones.
-- https://shortt-ly.herokuapp.com/
+  
+Fully responsive website for shortening URLs using only HTML, CSS, JS
+
+### API (Backend)
+https://shortt-ly.herokuapp.com/
+
+GIT REPO : https://github.com/mayank-aggrwal/URL-shortener
+
+<br>
+
+### Frontend
+https://mayank-aggrwal.github.io/short-url/
+
+<br>
+
+## Sreenshots
+  
+### Desktop
+<img height="270" width="520" alt="GIF" src="images/Desktop.png" />
+
+### Mobile
+<img height="450" width="220" alt="GIF" src="images/Mobile.jpg" />
+  
 
 ## Features
 
@@ -17,16 +39,7 @@ A simple yet useful web service to compress long URLs into shorter ones.
 ## Instructions
 
  - Clone the repository
- - Install node from [official website](https://nodejs.org/en/download/)
- - Install the dependencies for the project using below command
-   ```bash
-   npm install
-   ```
- - To run the application locally
-   ```bash
-   npm run dev
-   ```
- - In the browser goto : http://localhost:5000/health
+ - Open index.html to view webpage
  
 ## Additional helpful commands
 
