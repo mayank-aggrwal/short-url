@@ -62,7 +62,7 @@ async function shortenURL() {
             else {
                 shortenedURL = json.shortUrl;
                 let displayText = shortenedURL
-                result.innerHTML = displayText
+                result.innerHTML = `<a href="` + displayText + `" target="_blank">` + displayText + `</a>`
             }
       })
       .catch(err => console.log(err));

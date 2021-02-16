@@ -260,6 +260,14 @@
     font-weight: 500;
 }
 
+#result a {
+    color: black;
+}
+
+#result a:hover {
+    text-decoration: underline;
+}
+
 
 .out-box {
 
