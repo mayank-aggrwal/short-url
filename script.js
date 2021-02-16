@@ -23,7 +23,7 @@ code = document.getElementById('code')
 result = document.getElementById('result')
 
 async function shortenURL() {
-    
+    button.disabled = true
     urlToShorten = url.value
     customCode = code.value
     console.log(`URL: ${urlToShorten}\nCode: ${customCode}`);
@@ -66,4 +66,5 @@ async function shortenURL() {
             }
       })
       .catch(err => console.log(err));
+    button.disabled = false
 }

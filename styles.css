@@ -199,7 +199,9 @@
 .home .in-box button:hover {
     background: #f70541;
 }
-
+.home .in-box button:disabled {
+    background: #c7a8af;
+}
 .home .max-width .cover-img {
     margin-top: 40px;
     padding-right: 20px;
