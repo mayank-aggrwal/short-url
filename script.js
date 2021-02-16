@@ -62,9 +62,21 @@ async function shortenURL() {
             else {
                 shortenedURL = json.shortUrl;
                 let displayText = shortenedURL
-                result.innerHTML = `<a href="` + displayText + `" target="_blank">` + displayText + `</a>`
+                result.innerHTML = `<a id="short-url" href="` + displayText + `" target="_blank">` + displayText + `</a><i class="material-icons" onclick="copy()">content_copy</i>`
             }
       })
       .catch(err => console.log(err));
     button.disabled = false
 }
+
+function copyToClipboard() {
+    let short_url = document.getElementById('short-url')
+    const el = document.createElement('textarea');
+    el.value = short_url.innerText;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    console.log(short_url.innerText)
+}
+

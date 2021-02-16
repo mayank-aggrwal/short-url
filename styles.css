@@ -150,11 +150,21 @@
 }
 
 .home .main p {
-    padding: 15px 28px;
+    padding: 15px 28px 15px 28px;
     max-width: 700px;
     border-radius: 60px;
     background: #f0f0f0;
     font-size: 19px;
+}
+
+i {
+    margin-left: 20px;
+    float: right;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+i:active {
+    color: #c2c2c2;
 }
 
 .out-box {
@@ -200,6 +210,7 @@
     background: #f70541;
 }
 .home .in-box button:disabled {
+    cursor: auto;
     background: #c7a8af;
 }
 .home .max-width .cover-img {
@@ -779,9 +790,14 @@
     }
     
     .home .main p {
-        padding: 12px 23px;
+        padding: 12px 23px 12px 23px;
         font-size: 17px;
     }
+/* 
+    .home .main p span {
+        display: block;
+        width: 80%;
+    } */
 
     .home .main .custom {
         padding-top: 5%;
@@ -796,8 +812,14 @@
         width: 30%;
     }
 
+    i {
+        transform: scale(1);
+    }
 }
 
+@media (max-width: 590px) {
+
+}
 
 @media (max-width: 500px) {
     .max-width {
