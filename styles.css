@@ -150,14 +150,20 @@
 }
 
 .home .main p {
+    display: flex;
+    justify-content: space-between;
     padding: 15px 28px 15px 28px;
     max-width: 700px;
     border-radius: 60px;
     background: #f0f0f0;
     font-size: 19px;
 }
-
+.home .main p span {
+    display: block;
+    color: #969899;
+}
 i {
+    display: block;
     margin-left: 20px;
     float: right;
     cursor: pointer;
@@ -793,11 +799,6 @@ i:active {
         padding: 12px 23px 12px 23px;
         font-size: 17px;
     }
-/* 
-    .home .main p span {
-        display: block;
-        width: 80%;
-    } */
 
     .home .main .custom {
         padding-top: 5%;
@@ -826,6 +827,9 @@ i:active {
     i {
         display: inline-block;
         float: inline-start;
+    }
+    .home .main p {
+        border-radius: 15px;
     }
 }
 
@@ -913,7 +917,8 @@ i:active {
     }
     
     .home .main p {
-        padding: 11px 23px;
+        padding: 11px 15px;
+        border-radius: 10px;
     }
     .home .main .custom input {
         padding: 8px 14px;
@@ -923,4 +928,17 @@ i:active {
     .home .main h3 {
         margin-top: 35%;
     }
+}
+
+@media (max-width: 400px) {
+    .home .main p a {
+        font-size: 16px;
+    }
+    .home .main p span {
+        font-size: 16px;
+    }
+    .home .main p i {
+        font-size: 20px;
+    }
+    
 }
