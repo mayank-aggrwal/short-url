@@ -62,7 +62,7 @@ async function shortenURL() {
             else {
                 shortenedURL = json.shortUrl;
                 let displayText = shortenedURL
-                result.innerHTML = `<a id="short-url" href="` + displayText + `" target="_blank">` + displayText + `</a><i class="material-icons" onclick="copy()">content_copy</i>`
+                result.innerHTML = `<a id="short-url" href="` + displayText + `" target="_blank">` + displayText + `</a><i class="material-icons" onclick="copyToClipboard()">content_copy</i>`
             }
       })
       .catch(err => console.log(err));

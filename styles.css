@@ -817,8 +817,16 @@ i:active {
     }
 }
 
-@media (max-width: 590px) {
-
+@media (max-width: 530px) {
+    .home .main p a {
+        /* padding: 12px 63px 12px 23px; */
+        display: inline-block;
+        /* max-width: 320px; */
+    }
+    i {
+        display: inline-block;
+        float: inline-start;
+    }
 }
 
 @media (max-width: 500px) {
